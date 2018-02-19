@@ -3,8 +3,11 @@
 ## Les utilisateurs
 
 On peut créer plusieurs utilisateurs sur un même système Linux. 
+
 Lorsqu'on crée un utilisateur, un dossier personnel lui est automatiquement créé dans `/home`.
+
 Pour créer un utilisateur, on utilise la commande `adduser <utilisateur>`
+
 On peut aussi supprimer un utilisateur avec la commande `deluser <utilisateur>`. Mais si on utilise cette commande sans options, les fichiers de l'utilisateur supprimé ne sont pas détruits ! Il faudra utiliser l'option `--remove-home` pour supprimer son dossier personnel, ou `--remove-all-files` pour supprimer tous les fichiers dont il est le propriétaires (fichiers créés en dehors du dossier personnel par exemple)
 
 Créez un utilisateur `peon`, puis vérifiez que son dossier personnel a été créé dans `/home`
@@ -92,7 +95,9 @@ Calculez les 3 bits de permissions pour les permissions suivantes :
 ### Changer les permissions
 
 Les permissions sont aussi appelées des modes, ou modes de permissions. 
+
 Pour changer les permissions d'un fichier, on va donc utiliser la commande `chmod`.
+
 On peut l'utiliser avec les modes chaînés ou octaux : 
   * En modes chaînés, on a quatre lettres-clés qui permettent de changer les modes : 
     ** `u` pour user
@@ -111,6 +116,7 @@ On peut l'utiliser avec les modes chaînés ou octaux :
 ##  Expropriation
 
 Il est intéressant de changer les droits, mais parfois on aimerait aussi changer le propriétaire ou le groupe propriétaire d'un fichier. 
+
 Pour ce faire, on utilisera les commandes suivantes : 
   * `chown` pour changer de propriétaire
   * `chgrp` pour changer de groupe propriétaire

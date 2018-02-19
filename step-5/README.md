@@ -23,6 +23,7 @@ On ne peut utiliser `sudo` que si on fait partie du groupe `sudo` (et on devient
 On peut aussi devenir `root`. Ou devenir n'importe qui (sans faire n'importe quoi). 
 
 Pour cela, il faut utiliser la commande `su`. `su` tout court permet de devenir le superutilisateur (si on connait son mot de passe).
+
 On peut aussi utiliser `su <utilisateur>` pour devenir un autre utilisateur du système (mais toujours en connaissant son mot de passe, sinon ça ne marche pas)
 
 Lorsqu'on est `root`, la ligne de commande change : 
