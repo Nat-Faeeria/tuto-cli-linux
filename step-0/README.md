@@ -1,6 +1,6 @@
-#Etape 0
+# Etape 0
 
-##Premiers pas en console
+## Premiers pas en console
 
 Bienvenue dans ce tutoriel ! 
 
@@ -19,7 +19,7 @@ Vous pouvez aussi récupérer ces informations avec les commandes `whoami` et `p
 
 >Détail intéressant : sur la ligne, vous voyez apparaître ~, tandis que `pwd` affiche le chemin `/home/user`. C'est parce que ces deux chemins sont équivalents : le symbole `~` pointe vers le dossier personnel de l'utilisateur connecté. C'est un raccourci à retenir.
 
-##Petite balade
+## Petite balade
 
 Maintenant que vous savez qui vous êtes et où vous êtes, apprenons à nous déplacer.
 Pour se déplacer de dossier en dossier, il faut utiliser la commande `cd`
@@ -34,7 +34,7 @@ Déplacez vous maintenant vers le dossier /var, puis /usr.
 
 >Astuce : `cd` == Change Directory, ou Changer de Dossier
 
-##Retour aux origines
+## Retour aux origines
 
 Nous allons maintenant remonter à l'origine de tous les systèmes Unix : `/`
 Il suffit d'un petit `cd /` et ... nous y voilà. Mais ça à l'air bien vide et inutile ... Il serait intéressant de voir ce qui se cache dans `/`
