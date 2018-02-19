@@ -1,4 +1,4 @@
-# Etape 0
+# Etape 1
 
 ## Premiers pas en console
 
@@ -52,4 +52,4 @@ Le résultat de cette commande est d'afficher tous les dossiers et fichiers cont
 
 >Astuce : `ls` == Lister
 
-Vous êtes prêts pour [l'étape suivante](https://github.com/Nat-Faeeria/tuto-cli-linux/tree/master/step-1)
+Vous êtes prêts pour [l'étape suivante](https://github.com/Nat-Faeeria/tuto-cli-linux/tree/master/step-2)
