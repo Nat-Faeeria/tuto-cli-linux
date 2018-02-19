@@ -36,5 +36,28 @@ Les options sont très utiles, et sont souvent utilisées. Elles permettent parf
 
 >A retenir : les options vont souvent nous être utiles, il faut penser à lire le manuel pour savoir quelles options on peut utiliser avec chaque commande !
 
+## Chacun sa route, chacun son chemin
+
+On a vu qu'on pouvait utiliser `ls` sur des dossiers distants. Mais comment se réfère-t-on à ces dossiers ?
+On passe par ce qu'on appelle un chemin : c'est une chaine de caractère qui identifie la position du dossier (le chemin à effectuer pour arriver au dossier). 
+On trouve deux types de chemins : 
+  * Les chemins absolus : ces chemins sont toujours vrais, peu importe l'endroit où on se situe dans le système. Ce sont des chemins qui partent de la racine (`/`), et donc qui peuvent être suivis de n'importe où pour arriver toujours au même résultat (on repart à chaque fois de `/`, du tout début, donc on suit toujours le même chemin complet, absolu)
+  * Les chemins relatifs : ces chemins sont dépendants de notre emplacement dans le système. Ils omettent le début du chemin, qui est remplacé par l'emplacement actuel. Ils sont relatifs à l'emplacement au moment de la lecture du chemin.
+
+Exemples : 
+  * Absolus : /home/user, /usr/lib, /var/www, ...
+  * Relatifs : step-1/README.md, ../dossier/fichier.txt, ...
+
+Mettons que je sois dans le dossier `/home/user`, qui contient un dossier `Documents`. Je pourrais lister le contenu de `Documents` de deux manières : 
+  * Absolue : `ls /home/user/Documents`
+  * Relative : `ls Documents`
+Mettons à présent que j'exécute la commande `cd /`, puis que je réessaie les deux commandes ci-dessus :
+  * La commande avec le chemin absolu va-t-elle fonctionner ? Pourquoi ?
+  * La commande avec le chemin relatif va-t-elle fonctionner ? Pourquoi ?
+
+>Astuce : Le symbole `..` pointe vers le dossier précédent. `../..` pointe vers le dossier parent de mon dossier parent, `../../..` vers le dossier parent du dossier parent de mon dossier parent ...
+
+>A retenir : les chemins absolus sont toujours vrais, mais volumineux/verbeux. Les chemins relatifs sont plus courts, mais laissent la possibilité d'une erreur suivant le contexte d'exécution.
+
 Passez maintenant à [l'étape suivante](https://github.com/Nat-Faeeria/tuto-cli-linux/tree/master/step-3)
 
