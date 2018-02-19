@@ -46,6 +46,21 @@ Comprenez vous la différence entre `>` et `>>` ?
 
 >A retenir : `>>` détourne un flux et l'écrit à la suite du contenu de sa cible
 
+## Démultiplication
+
+On veut faire des modifications à notre fichier `fichier-inutile.txt`. Dans le doute, on décide de d'abord en faire une copie.
+On utilise la commande `¢p` : `cp fichier-inutile.txt copie-fichier-inutile.txt`
+On veut aussi faire une copie de `dossier-inutile`. Il faut utiliser `cp`, mais avec une option particulière ... laquelle ? (`man cp`)
+
+## Mon nom est Personne
+
+On trouve que le nom `copie-fichier-inutile.txt` est trop long. On décide de renommer ce fichier en `cp-fi.txt`.
+On utilise la commande `mv` : `mv copie-fichier-inutile.txt cp-fi.txt`
+
+La commande `mv` sert en fait à déplacer des fichiers ou des dossiers. Lors du déplacement, on peut les renommer. Comme il n'existe pas de commande rename, on renomme un fichier ou un dossier en le déplaçant à son emplacement actuel, mais en changeant son nom ^^
+
+Créez un dossier `backup` dans `/home/user`, et déplacez-y `cp-fi.txt`
+
 ## Destruction
 
 Le fichier que nous avons créé est inutile. Le dossier aussi, comme le nom l'indique. Nous allons donc les supprimer, pour nettoyer un peu.
