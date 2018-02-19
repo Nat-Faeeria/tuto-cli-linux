@@ -22,8 +22,11 @@ Vous pouvez aussi récupérer ces informations avec les commandes `whoami` et `p
 ## Petite balade
 
 Maintenant que vous savez qui vous êtes et où vous êtes, apprenons à nous déplacer.
+
 Pour se déplacer de dossier en dossier, il faut utiliser la commande `cd`
+
 Essayons cette commande tout de suite en nous déplaçant vers le dossier `/etc` : `cd /etc`
+
 Le début de notre ligne a maintenant changé : 
 ```shell
 user@machine:/etc$
@@ -37,7 +40,9 @@ Déplacez vous maintenant vers le dossier /var, puis /usr.
 ## Retour aux origines
 
 Nous allons maintenant remonter à l'origine de tous les systèmes Unix : `/`
+
 Il suffit d'un petit `cd /` et ... nous y voilà. Mais ça à l'air bien vide et inutile ... Il serait intéressant de voir ce qui se cache dans `/`
+
 Nous allons donc lister les dossiers contenus dans `/` . On va pour cela utiliser la commande `ls`
 
 Le résultat de cette commande est d'afficher tous les dossiers et fichiers contenus dans le dossier courant. On découvre ainsi : 

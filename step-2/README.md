@@ -3,8 +3,11 @@
 ## Don't Panic, RTFM
 
 Nous avions fini l'étape précédente avec la commande `ls`, qui permettait de lister les dossiers et fichiers du dossier courant. Mais est-ce que c'est vraiment la définition de la commande  `ls` ? Ne fonctionne-t-elle que comme cela ?
+
 Pour le savoir, nous allons utiliser le grimoire indispensable à tous les sorciers de la ligne de commande : Le Manuel. Le Manuel contient la documentation relatives aux commandes disponibles sur votre système linux, si cette documentation existe. On l'invoque très simplement à l'aide de la commande `man <commande>`
+
 Ici, nous souhaitons des renseignements sur `ls`, nous allons donc utiliser la commande `man ls`
+
 Dans les résultats de cette commande, on identifie cette ligne : 
 ```shell
        ls [OPTION]... [FILE]...
@@ -23,6 +26,7 @@ Quand on utilise `ls` seule, on applique `ls` au dossier courant, faute d'argume
 ## Et la salade en option
 
 Le Manuel pour `ls` indiquait qu'on pouvait lui passer des options. Les options sont un moyen de manipuler la commande qu'on utilise pour obtenir un résultat précis, ou pour réaliser une action spéciale.
+
 Les options suivent toujours le format suivant `commande -option -option -option param `, ou parfois `commande -option1option2option3 param`.
 
 Pour comprendre l'utilité des options, essayons quelques options de `ls` : 
@@ -32,6 +36,7 @@ Pour comprendre l'utilité des options, essayons quelques options de `ls` :
   * ...
 
 Chaque option a son utilité (que je vous laisse chercher ;p ), qui est définie dans le Manuel. 
+
 Les options sont très utiles, et sont souvent utilisées. Elles permettent parfois des changements majeurs dans le fonctionnement de la commande (par exemple les commande de `ping`, qui vont permettre d'envoyer des requêtes uniquement en IPv4 ou en IPv6, ou d'envoyer des types de requêtes particuliers)
 
 >A retenir : les options vont souvent nous être utiles, il faut penser à lire le manuel pour savoir quelles options on peut utiliser avec chaque commande !
@@ -39,7 +44,9 @@ Les options sont très utiles, et sont souvent utilisées. Elles permettent parf
 ## Chacun sa route, chacun son chemin
 
 On a vu qu'on pouvait utiliser `ls` sur des dossiers distants. Mais comment se réfère-t-on à ces dossiers ?
+
 On passe par ce qu'on appelle un chemin : c'est une chaine de caractère qui identifie la position du dossier (le chemin à effectuer pour arriver au dossier). 
+
 On trouve deux types de chemins : 
   * Les chemins absolus : ces chemins sont toujours vrais, peu importe l'endroit où on se situe dans le système. Ce sont des chemins qui partent de la racine (`/`), et donc qui peuvent être suivis de n'importe où pour arriver toujours au même résultat (on repart à chaque fois de `/`, du tout début, donc on suit toujours le même chemin complet, absolu)
   * Les chemins relatifs : ces chemins sont dépendants de notre emplacement dans le système. Ils omettent le début du chemin, qui est remplacé par l'emplacement actuel. Ils sont relatifs à l'emplacement au moment de la lecture du chemin.
