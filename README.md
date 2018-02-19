@@ -9,5 +9,5 @@ Pour réaliser ce tutoriel, vous avez besoin :
 ##Organisation du tutoriel
 Ce tutoriel est organisé par étapes. Chaque étape est contenue dans un dossier step-*
 
-Pour commencer, allez à [l'étape 0](https://github.com/Nat-Faeeria/tuto-cli-linux/step-0)
+Pour commencer, allez à [l'étape 0](https://github.com/Nat-Faeeria/tuto-cli-linux/tree/master/step-0)
 
