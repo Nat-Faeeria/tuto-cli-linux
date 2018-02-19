@@ -46,4 +46,15 @@ Comprenez vous la différence entre `>` et `>>` ?
 
 >A retenir : `>>` détourne un flux et l'écrit à la suite du contenu de sa cible
 
+## Destruction
+
+Le fichier que nous avons créé est inutile. Le dossier aussi, comme le nom l'indique. Nous allons donc les supprimer, pour nettoyer un peu.
+
+Pour supprimer un fichier, on utilise la commande `rm` : `rm fichier-inutile.txt`
+Pour supprimer un dossier, on a deux choix : 
+  * Le dossier est vide : on utilise la commande `rmdir` : `rmdir dossier-inutile`
+  * Le dossier a du contenu : si on utilise `rmdir`, on va obtenir une erreur. Il faut utiliser la commande `rm` avec l'option `R` : `rm -R dossier-inutile`
+
+>Pourquoi l'option `R` ? A vous de chercher ... ;)
+
 Vous êtes prêts à passer à [l'étape suivante](https://github.com/Nat-Faeeria/tuto-cli-linux/tree/master/step-4)
